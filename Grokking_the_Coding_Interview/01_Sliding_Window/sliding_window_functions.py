@@ -1,3 +1,25 @@
+# BRUTE FORCE
+# Time complexity: O(N*K)
+
+def brute_force_max_sub_array_of_size_k(k, arr):
+    max_sum = 0
+    window_sum = 0
+
+    for i in range(len(arr)- k + 1):
+        window_sum = 0
+        for j in range(i, i+k):
+            window_sum += arr[j]
+        max_sum = max(sum, window_sum)
+    
+    return max_sum
+
+
+
+
+# SLIDING WINDOW
+# Time complexity: O(N)
+# Space complexity: O(1)
+
 def max_sub_array_of_size_k(k, arr):
 
     max_sum, window_sum, window_start = 0, 0, 0
