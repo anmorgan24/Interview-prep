@@ -1,0 +1,8 @@
+def isPalindrome(x):
+    if (x < 0) | ((x % 10 == 0) & (x != 0)):
+        return False
+    backwardsNum = 0
+    while (x > backwardsNum):
+        backwardsNum = backwardsNum * 10 + x % 10
+        x //= 10
+    return (x == backwardsNum or x == backwardsNum//10)
