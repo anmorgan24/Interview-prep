@@ -1,0 +1,12 @@
+def longestCommonPrefix(self, strs: List[str]) -> str:
+    if len(strs) == 1:
+         return strs[0]
+    shortest = min([len(s) for s in strs])
+    result = ''
+        
+    for i in range(shortest):
+        if len(set([s[i] for s in strs])) == 1:
+            result += strs[0][i]
+        else:
+            return result
+    return result
