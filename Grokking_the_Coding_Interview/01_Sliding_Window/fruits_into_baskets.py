@@ -1,3 +1,5 @@
+# O(N+N), or, asymptotically: O(N)
+
 def fruits_into_baskets(fruits):
   window_start = 0
   max_length = 0
