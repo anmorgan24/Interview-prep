@@ -19,7 +19,7 @@ def traverse(root):
         for _ in range(levelSize):
             currentNode = queue.popleft()
             #add the node to the current level
-            currentLevel.appned(currentNode.val)
+            currentLevel.append(currentNode.val)
             # insert the children of current node in the queue
             if currentNode.left:
                 queue.append(currentNode.left)
