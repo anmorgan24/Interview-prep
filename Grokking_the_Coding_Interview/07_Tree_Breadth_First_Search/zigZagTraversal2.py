@@ -14,7 +14,7 @@ def traverse(root):
     while queue:
         levelSize = len(queue)
         currentLevel = []
-        for _ in range (levelSize):
+        for _ in range(levelSize):
             currentNode = queue.pop(0)
 
             # add the node to the current level based on the traverse direction
