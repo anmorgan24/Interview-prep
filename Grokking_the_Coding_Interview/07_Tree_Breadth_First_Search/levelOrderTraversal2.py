@@ -9,7 +9,6 @@ def traverse(root):
         return result
 
     queue = [(root)]
-    #queue.append(root)
     while queue:
         levelSize = len(queue)
         currentLevel = []
