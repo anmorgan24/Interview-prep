@@ -32,3 +32,9 @@ def find_permutation(str1, pattern):
                 char_frequency[left_char] += 1
         
     return False
+
+# Time complexity: O(M + N), when N and M are the number of characters in the input string and pattern, 
+# respectively
+
+# Space complexity: O(M), since, in the worst case, the whole pattern can have distinct characters
+# that will go into the HashMap char_frequency
