@@ -1,4 +1,4 @@
-def find_permutation(str1, pattern):
+def findAnagrams(str1, pattern):
     window_start=0
     matched=0
     char_frequency={}
