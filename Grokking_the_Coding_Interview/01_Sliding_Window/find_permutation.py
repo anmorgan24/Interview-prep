@@ -37,4 +37,4 @@ def find_permutation(str1, pattern):
 # respectively
 
 # Space complexity: O(M), since, in the worst case, the whole pattern can have distinct characters
-# that will go into the HashMap char_frequency
+# that will go into the HashMap char_frequency 
