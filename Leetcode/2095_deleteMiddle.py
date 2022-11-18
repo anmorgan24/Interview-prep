@@ -11,10 +11,7 @@ class Solution(object):
         :type head: Optional[ListNode]
         :rtype: Optional[ListNode]
         """
-        if head is None:
-            return None
-        if head.next is None:
-            head.next = None
+        if head is None or head.next is None:
             return None
         if head.next.next is None:
             head.next = None
