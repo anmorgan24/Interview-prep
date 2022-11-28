@@ -23,11 +23,9 @@ def find_paths_recursive(currentNode, required_sum, currentPath, allPaths):
     allPaths.append(list(currentPath))
   else:
     # traverse the left sub-tree
-    find_paths_recursive(currentNode.left, required_sum -
-                         currentNode.val, currentPath, allPaths)
+    find_paths_recursive(currentNode.left, required_sum - currentNode.val, currentPath, allPaths)
     # traverse the right sub-tree
-    find_paths_recursive(currentNode.right, required_sum -
-                         currentNode.val, currentPath, allPaths)
+    find_paths_recursive(currentNode.right, required_sum - currentNode.val, currentPath, allPaths)
 
   # remove the current node from the path to backtrack,
   # we need to remove the current node while we are going up the recursive call stack.
