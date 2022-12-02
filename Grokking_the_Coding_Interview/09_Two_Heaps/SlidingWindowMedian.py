@@ -56,12 +56,28 @@ class SlidingWindowMedian:
     elif len(self.maxHeap) < len(self.minHeap):
       heappush(self.maxHeap, -heappop(self.minHeap))
 
-
+'''
 def main():
 
   slidingWindowMedian = SlidingWindowMedian()
   result = slidingWindowMedian.find_sliding_window_median(
     [1, 2, -1, 3, 5], 2)
+  print("Sliding window medians are: " + str(result))
+
+  slidingWindowMedian = SlidingWindowMedian()
+  result = slidingWindowMedian.find_sliding_window_median(
+    [1, 2, -1, 3, 5], 3)
+  print("Sliding window medians are: " + str(result))
+
+
+main()
+'''
+
+def main():
+
+  slidingWindowMedian = SlidingWindowMedian()
+  result = slidingWindowMedian.find_sliding_window_median(
+    [1,3,-1,-3,5,3,6,7], 3)
   print("Sliding window medians are: " + str(result))
 
   slidingWindowMedian = SlidingWindowMedian()
